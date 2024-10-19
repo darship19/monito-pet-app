@@ -51,10 +51,9 @@ const Customer = () => {
               transition: 'transform 0.5s ease'
             }}
           >
-            <img src={customer.imageUrl} alt={customer.name} />
+            <img src={customer.image} alt={customer.name} />
             <div className="customer-card-content">
-              <p>{customer.name}</p>
-              <p>{customer.description}</p>
+              
             </div>
           </div>
         ))}

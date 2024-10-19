@@ -24,6 +24,8 @@ const MorePuppies = () => {
     fetchPuppies();
   }, []);
 
+
+
   if (loading) {
     return <p>Loading puppies...</p>;
   }
@@ -36,15 +38,15 @@ const MorePuppies = () => {
     <section className="puppies-section">
       <div className="puppies-header">
         <h2>What's new?</h2>
-        <a href="/see-more" className="see-more-link">See More Puppies</a>
+        <a href="/category" className="see-more-link">See More Puppies</a>
       </div>
       <div className="puppies-grid">
         {puppies.map((puppy) => (
           <div key={puppy.id} className="puppy-card">
-            <img src={puppy.imageUrl} alt={puppy.name} className="puppy-image" />
+            <img src={puppy.image} alt={puppy.name} className="puppy-image" />
             <div className="puppy-details">
               <h3>{puppy.id} - {puppy.name}</h3>
-              <p><strong>Gene:</strong> {puppy.gene}</p>
+              <p><strong>Gender:</strong> {puppy.gender}</p>
               <p><strong>Age:</strong> {puppy.age}</p>
               <p className="puppy-price">{puppy.price} VND</p>
             </div>
