@@ -12,6 +12,7 @@ const MorePuppies = () => {
     const fetchPuppies = async () => {
       try {
         const response = await axios.get('https://monitor-backend-rust.vercel.app/api/pets'); // replace with actual URL
+        console.log(response.data);
         setPuppies(response.data.slice(0, 4)); // only show the first 4 puppies
         setLoading(false);
       } catch (err) {
