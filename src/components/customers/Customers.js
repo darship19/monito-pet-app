@@ -1,86 +1,75 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Customers.css';
 
-const Customers = () => {
+const Customer = () => {
   const [customers, setCustomers] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(true);  // Added a loading state
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  // Fetch customer data from the API when the component mounts
   useEffect(() => {
-    // Fetching customer data from the API
     const fetchCustomers = async () => {
       try {
-        const response = await fetch('https://monitor-backend-rust.vercel.app/api/customers');
-        const data = await response.json();
-        if (data && data.customers) {
-          setCustomers(data.customers);  // Ensure the customers array is defined
-        }
-      } catch (error) {
-        console.error('Error fetching customer data:', error);
-      } finally {
-        setLoading(false);  // Turn off the loading state once the data is fetched
+        const response = await axios.get('https://monitor-backend-rust.vercel.app/api/customers');
+        setCustomers(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError('Failed to fetch customer data.');
+        setLoading(false);
       }
     };
 
     fetchCustomers();
   }, []);
 
-  // Handler to move the carousel
-  const goToNextSlide = () => {
-    if (customers.length > 0) {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % customers.length);
-    }
-  };
-
-  const goToPrevSlide = () => {
-    if (customers.length > 0) {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + customers.length) % customers.length);
-    }
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
   };
 
   if (loading) {
-    return <div>Loading...</div>;  // Display loading text until the data is fetched
+    return <p>Loading customers...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
   }
 
   return (
-    <div className="customers-container">
-      <h2>Our Lovely Customers</h2>
-      
-      {customers.length > 0 ? (
-        <div className="carousel-container">
-          {/* Previous Button */}
-          <button className="prev-btn" onClick={goToPrevSlide}>◀</button>
-          
-          {/* Main Customer Display */}
-          <div className="carousel-slide">
-            {customers.slice(currentIndex, currentIndex + 3).map((customer, index) => (
-              <div className="customer-card" key={index}>
-                <img src={customer.image} alt={customer.name} className="customer-img" />
-              </div>
-            ))}
+    <section className="customer-section">
+      <h2>Our Lovely Customer</h2>
+      <div className="customer-carousel">
+        {customers.map((customer, index) => (
+          <div
+            key={customer.id}
+            className={`customer-card ${
+              currentIndex === index ? 'active-slide' : ''
+            }`}
+            style={{
+              transform: `translateX(${(index - currentIndex) * 100}%)`,
+              transition: 'transform 0.5s ease'
+            }}
+          >
+            <img src={customer.imageUrl} alt={customer.name} />
+            <div className="customer-card-content">
+              <p>{customer.name}</p>
+              <p>{customer.description}</p>
+            </div>
           </div>
-          
-          {/* Next Button */}
-          <button className="next-btn" onClick={goToNextSlide}>▶</button>
-        </div>
-      ) : (
-        <div>No customers to display</div>
-      )}
-      
-      {/* Pagination Dots */}
-      {customers.length > 0 && (
-        <div className="pagination">
-          {customers.map((_, idx) => (
-            <span
-              key={idx}
-              className={`dot ${currentIndex === idx ? 'active' : ''}`}
-              onClick={() => setCurrentIndex(idx)}
-            ></span>
-          ))}
-        </div>
-      )}
-    </div>
+        ))}
+      </div>
+      <div className="dot-container">
+        {customers.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentIndex === index ? 'active' : ''}`}
+            onClick={() => handleDotClick(index)}
+          ></span>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default Customers;
+export default Customer;

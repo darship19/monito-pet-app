@@ -1,0 +1,88 @@
+/* Same as previously shared CSS */
+.puppies-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .puppies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .puppies-header h2 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .see-more-link {
+    font-size: 18px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .see-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  .puppies-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .puppy-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(25% - 20px);
+  }
+  
+  .puppy-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .puppy-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .puppy-details {
+    padding: 15px;
+  }
+  
+  .puppy-details h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .puppy-details p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .puppy-price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .puppies-grid {
+      flex-direction: column;
+    }
+    
+    .puppy-card {
+      width: 100%;
+    }
+  }
+  
