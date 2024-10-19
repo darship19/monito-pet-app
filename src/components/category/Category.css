@@ -1,0 +1,15 @@
+.category-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .category-page p {
+    font-size: 18px;
+    color: #333;
+  }
+  

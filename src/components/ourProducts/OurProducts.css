@@ -1,0 +1,79 @@
+/* src/components/OurProducts.css */
+.products-container {
+    padding: 20px;
+    position: relative; /* Add this line */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .product-gift {
+    background-color: #f8c102;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .product-gift:before {
+    content: "🎁 ";
+  }
+  /* src/components/OurProducts.css */
+  .view-more {
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: white;
+    border: 2px solid #003366; /* Replace #003366 with the actual color code used */
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    z-index: 1; /* Ensure the button is above other elements */
+  }
+  
+  .view-more:hover {
+    background-color: #003366;
+    color: white;
+  }
+  
+
+  .view-more svg {
+    width: 16px;
+    height: 16px;
+  }

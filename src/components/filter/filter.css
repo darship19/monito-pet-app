@@ -1,0 +1,86 @@
+/* filter.css */
+
+.filter-container {
+    background-color: #fff;
+    padding: 0;
+    width: 250px;
+  }
+  
+  .filter-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2e57;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+    text-align: left; /* Aligns the content inside this section to the left */
+
+  }
+  .filter-section label {
+    display: flex;
+    justify-content: flex-start; /* Ensures the checkboxes and labels are aligned to the left */
+    align-items: center;
+    margin-bottom: 10px; /* Adds some space between the checkboxes */
+  }
+  
+  .filter-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left; /* Aligns the h4 text to the right */
+
+  }
+  
+  .filter-section input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .filter-color {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-color label {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .filter-color .color-circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .color-red { background-color: red; }
+  .color-apricot { background-color: #f8b195; }
+  .color-black { background-color: black; }
+  .color-black-white { background: linear-gradient(90deg, black 50%, white 50%); }
+  .color-silver { background-color: silver; }
+  .color-tan { background-color: #d2b48c; }
+  
+  .filter-price input {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .filter-breed {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Aligns the labels and checkboxes to the right */
+
+  }
+
+  .filter-breed label {
+    display: flex;
+    justify-content: flex-start; /* Ensures the labels and checkboxes are aligned to the right */
+    align-items: center;
+    margin-bottom: 10px; /* Adds spacing between each checkbox */
+  }

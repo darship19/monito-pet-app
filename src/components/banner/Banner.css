@@ -1,0 +1,72 @@
+/* src/components/Banner.css */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef5e4; /* Background for the text section */
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .banner-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #0b2849;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #616161;
+    margin-bottom: 30px;
+  }
+  
+  .banner-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .intro-button {
+    background-color: transparent;
+    border: 2px solid #0b2849;
+    color: #0b2849;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .intro-button span {
+    margin-left: 10px;
+  }
+  
+  .explore-button {
+    background-color: #0b2849;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-image img {
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  

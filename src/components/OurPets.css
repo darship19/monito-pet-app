@@ -1,0 +1,85 @@
+/* src/components/OurPets.css */
+.our-pets {
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Add this line */
+  }
+  
+  .our-pets h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pet-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .pet-info {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .pet-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .pet-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .view-more {
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: white;
+    border: 2px solid #003366; /* Replace #003366 with the actual color code used */
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    z-index: 1; /* Ensure the button is above other elements */
+  }
+  
+  .view-more:hover {
+    background-color: #003366;
+    color: white;
+  }
+  
+
+  .view-more svg {
+    width: 16px;
+    height: 16px;
+  }
+  

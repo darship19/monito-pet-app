@@ -1,0 +1,119 @@
+.footer-container {
+    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+    border-radius: 30.22px 30.22px 0px 0px;
+    padding: 60px 98px 30px;
+    text-align: center;
+    max-width: 1087.89px;
+    margin: 0 auto;
+  }
+  
+  /* Register Section */
+  .register-section {
+    background-color: #002244;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .register-section h2 {
+    color: #fff;
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-size: 18.13px;
+    font-weight: 700;
+    line-height: 27.2px;
+    margin-bottom: 20px;
+  }
+  
+  .email-subscribe {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .email-subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+  
+  .email-subscribe button {
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .nav-links a {
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CCD1D2;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .social-icons a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    margin-left: 20px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      padding: 30px;
+    }
+  
+    .register-section h2 {
+      font-size: 16px;
+    }
+  
+    .email-subscribe input {
+      width: 200px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      margin-top: 10px;
+    }
+  }
+  

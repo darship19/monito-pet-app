@@ -1,0 +1,95 @@
+/* src/components/fulldetail/FullDetails.css */
+
+.full-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .carousel {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .thumbnail:hover {
+    opacity: 0.8;
+  }
+  
+  .product-details {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .product-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .details-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .details-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-btn,
+  .chat-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover,
+  .chat-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
