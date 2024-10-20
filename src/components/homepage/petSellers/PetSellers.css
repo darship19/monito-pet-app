@@ -1,12 +1,13 @@
 /* Container */
 .pet-sellers-container {
-    width: 1438px;
+  width: 1440px;
     height: 251px;
     top:3181px;
-    padding: 40px 130px 40px 130px;
+    padding: 40px 80px 40px 80px;
     background-color: #fff;
     text-align: center;
     gap:15px;
+    margin: 0 auto;
   
   }
   
@@ -15,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .pet-sellers-header p {

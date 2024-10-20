@@ -1,16 +1,34 @@
 /* src/components/OurPets.css */
 .our-pets {
-    padding: 20px;
+  width: 1440px;
+  height: 986px;
+    padding: 40px 80px;
     text-align: center;
     position: relative; /* Add this line */
+    margin: 0 auto;
   }
-  
-  .our-pets h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
+
+/* Header Section */
+.frame56-header {
+  display: flex;
+  justify-content: space-between; /* Align header text and button on opposite sides */
+  align-items: center; /* Vertically center the content */
+  margin-bottom: 20px;
+}
+
+.frame56-header h3 {
+  font-size: 18px;
+  color: #000; /* Set text color to black */
+  font-weight: 400;
+  text-align: left; /* Align text to the left */
+}
+    
+.frame56-header h2 {
+  font-size: 28px;
+  color: #003459;
+  font-weight: 700;
+  text-align: left; /* Align text to the left */
+}
   .pets-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +72,8 @@
   }
   
   .view-more {
-    position: absolute; /* Position the button absolutely */
-    top: 20px; /* Distance from the top */
-    right: 20px; /* Distance from the right */
     background-color: white;
-    border: 2px solid #003366; /* Replace #003366 with the actual color code used */
+    border: 2px solid #003366; /* Keep the same styling */
     color: #003366;
     padding: 10px 20px;
     border-radius: 25px;
@@ -69,7 +84,6 @@
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
-    z-index: 1; /* Ensure the button is above other elements */
   }
   
   .view-more:hover {

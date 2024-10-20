@@ -1,7 +1,7 @@
 /* Frame1 CSS Styles */
 .frame1-container {
   display: flex;
-  max-width: 1200px;
+  width: 1280px;
   margin: 20px auto;
 }
 

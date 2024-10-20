@@ -1,6 +1,7 @@
 // src/components/OurPets.js
 import React, { useEffect, useState } from 'react';
 import './OurPets.css';
+import '../frame56/Frame56.css'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import axios for API calls
 
@@ -33,19 +34,10 @@ const OurPets = () => {
 
   return (
     <div className="our-pets">
-      <h2>Take A Look At Some Of Our Pets</h2>
-      <div className="pets-container">
-        {petsData.map((pet) => (
-          <div className="pet-card" key={pet.id}>
-            <img src={pet.image} alt={pet.breed} />
-            <div className="pet-info">
-              <h3>{pet.id} - {pet.breed}</h3>
-              <p>Gender: {pet.gender}</p>
-              <p>Age: {pet.age}</p>
-              <p>{pet.price}</p>
-            </div>
-          </div>
-        ))}
+    <div className="frame56-header">
+      <div className="header-text">
+        <h3 className="sub-heading">What's new?</h3>
+        <h2 className="main-heading">Take A Look At Some Of Our Pets</h2>
       </div>
       <button className="view-more" onClick={handleViewMore}>
         View more
@@ -54,6 +46,21 @@ const OurPets = () => {
         </svg>
       </button>
     </div>
+  
+    <div className="pets-container">
+      {petsData.map((pet) => (
+        <div className="pet-card" key={pet.id}>
+          <img src={pet.image} alt={pet.breed} />
+          <div className="pet-info">
+            <h3>{pet.id} - {pet.breed}</h3>
+            <p>Gender: {pet.gender}</p>
+            <p>Age: {pet.age}</p>
+            <p>{pet.price}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
   );
 };
 

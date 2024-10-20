@@ -1,8 +1,10 @@
 // src/components/OurProducts.js
 import React, { useState, useEffect } from 'react';
 import './OurProducts.css'; // Import the corresponding CSS file
+import '../adoption/Adoption.css'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import axios for API requests
+import '../frame56/Frame56.css'
 
 const OurProducts = () => {
   const [products, setProducts] = useState([]); // State to store the fetched product data
@@ -33,22 +35,32 @@ const OurProducts = () => {
 
   return (
     <div className="products-container">
-      <h2>Our Products</h2>
+
+    <div className="frame56-header">
+        <div className="header-text">
+          <h3 className="sub-heading">Hard to choose right products for your pets?</h3>
+          <h2 className="main-heading">Our Products</h2>
+        </div>
+        <button className="view-more-btn">View more →</button>
+      </div>
+
       <div className="products-grid">
         {products.map((product, index) => (
           <div className="product-card" key={index}>
             <img src={product.image} alt={product.name} className="product-image" />
-            <h3>{product.name}</h3>
-            <p>{product.product}</p>
-            {product.size && <p>Size: {product.size}</p>}
-            <p className="product-price">{product.price}</p>
-            <div className="product-gift">{product.description}</div>
-            <button className="view-more" onClick={() => handleViewMore(product)}>
-              View more
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M8 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" />
-              </svg>
-            </button>
+            <div className='detail'>
+              <div className='firsthalf'>
+                <h3>{product.name}</h3>
+                <div className='produt-size'>
+                  <p>
+                    Product: {product.product}
+                    {product.size && <span> &middot; Size: {product.size}</span>}
+                  </p>
+                </div>
+                <p className="product-price">{product.price}</p>
+              </div>
+              <div className="product-gift">{product.description}</div>
+            </div>
           </div>
         ))}
       </div>

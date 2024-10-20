@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './Customers.css';
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react"; // Swiper components
+import { Pagination } from "swiper/modules"; // Correct way to import Pagination in v9+
+import "swiper/css"; // Swiper core styles
+import "swiper/css/pagination"; // Swiper pagination styles
+import "./Customers.css"; // Correct CSS import
+
+const API_URL = "https://monitor-backend-rust.vercel.app/api/customers";
 
 const Customer = () => {
   const [customers, setCustomers] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  // Fetch customer data from the API when the component mounts
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const response = await axios.get('https://monitor-backend-rust.vercel.app/api/customers');
-        setCustomers(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError('Failed to fetch customer data.');
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        setCustomers(data);
+      } catch (error) {
+        console.error("Error fetching customer data:", error);
+      } finally {
         setLoading(false);
       }
     };
@@ -24,47 +27,47 @@ const Customer = () => {
     fetchCustomers();
   }, []);
 
-  const handleDotClick = (index) => {
-    setCurrentIndex(index);
-  };
-
   if (loading) {
-    return <p>Loading customers...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
+    return <div className="loading">Loading customers...</div>;
   }
 
   return (
-    <section className="customer-section">
-      <h2>Our Lovely Customer</h2>
-      <div className="customer-carousel">
-        {customers.map((customer, index) => (
-          <div
-            key={customer.id}
-            className={`customer-card ${
-              currentIndex === index ? 'active-slide' : ''
-            }`}
-            style={{
-              transform: `translateX(${(index - currentIndex) * 100}%)`,
-              transition: 'transform 0.5s ease'
-            }}
-          >
-            <img src={customer.image} alt={customer.name} />
-          </div>
+    <div className="customer-container">
+      <h2>Our Lovely Customers</h2>
+      <Swiper
+        modules={[Pagination]}
+        spaceBetween={20}
+        slidesPerView={4}
+        pagination={{ clickable: true }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+      >
+        {customers.map((customer) => (
+          <SwiperSlide key={customer.id}>
+            <div className="customer-card">
+              <img
+                src={customer.image}
+                alt={customer.name}
+                className="customer-image"
+              />
+              <p className="customer-name">{customer.name}</p>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
-      <div className="dot-container">
-        {customers.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${currentIndex === index ? 'active' : ''}`}
-            onClick={() => handleDotClick(index)}
-          ></span>
-        ))}
-      </div>
-    </section>
+      </Swiper>
+    </div>
   );
 };
 

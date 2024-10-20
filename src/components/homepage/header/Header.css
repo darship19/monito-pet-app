@@ -4,8 +4,8 @@
     background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
     padding: 20px 50px;
     font-family: 'Arial', sans-serif;
-    
-
+    width: 1440px;
+    margin: 0 auto;
   }
   
   .header-top {

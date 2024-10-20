@@ -1,6 +1,4 @@
-import Navbar  from './navbar/Navbar';
-import React from 'react';
-import "./assets/fonts/SVN-GilroyBold/SVN-GilroyBold.ttf";
+import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer';
 import PetSellers from './components/homepage/petSellers/PetSellers';
 import Frame56 from './components/homepage/frame56/Frame56';
@@ -14,38 +12,31 @@ import ProductDetails from './components/page-3/productDetailsPage/ProductDetail
 import Contact from './components/contact/Contact';
 import Adoption from './components/homepage/adoption/Adoption';
 
-import './App.css'; // or './App.css' depending on your structure
-
-
 function App() {
     return (
         <Router>
-          <div className="App">
-            <Navbar />
-            <Routes>
-              <Route path="/" element={
-                <>
-                  <Header />
-                  <OurPets />
-                  <Banner />
-                  <OurProducts />
-                  <PetSellers />
-                  <Adoption />
-                  <Frame56 />
-                </>
-              } />
-              <Route path="/category" element={<Category />} />
-              <Route path="/product-details" element={<ProductDetails />} />
-              {/* Add other routes if necessary */}
-              <Route path="/contact" element={<Contact />} /> {/* Contact route */}
-
-            </Routes>
-            <Footer />
-          </div>
+            <div className="App">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Header />
+                            <OurPets />
+                            <Banner />
+                            <OurProducts />
+                            <PetSellers />
+                            <Adoption />
+                            <Frame56 />
+                        </>
+                    } />
+                    <Route path="/category" element={<Category />} />
+                    <Route path="/product-details" element={<ProductDetails />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+                <Footer />
+            </div>
         </Router>
-      );
-
-
+    );
 }
 
 export default App;

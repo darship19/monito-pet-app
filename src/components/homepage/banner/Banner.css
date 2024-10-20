@@ -1,76 +1,118 @@
-/* src/components/Banner.css */
+
+/* Container for the entire banner */
 .banner-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fef5e4; /* Background for the text section */
-    border-radius: 20px;
-    padding: 20px;
-    overflow: hidden;
-    width: 1180px;
-    height: 378px;
-    top: 1681px;
-    left: 130px;
-  }
-  
-  .banner-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #0b2849;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: #616161;
-    margin-bottom: 30px;
-  }
-  
-  .banner-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .intro-button {
-    background-color: transparent;
-    border: 2px solid #0b2849;
-    color: #0b2849;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  
-  .intro-button span {
-    margin-left: 10px;
-  }
-  
-  .explore-button {
-    background-color: #0b2849;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .banner-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .banner-image img {
-    max-height: 300px;
-    object-fit: contain;
-    border-radius: 12px;
-  }
-  
+  width: 1440px;
+  height: 378px;
+  background-color: #fff;  
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; 
+}
+.banner-container-2nd {
+  display: flex;
+  align-items: center;
+  background-color: #FCEED5;
+  padding: 30px;
+  border-radius: 20px;
+  height: 378px;
+  width: 1280px;
+  border-radius: 20px;
+}
+/* Left Section: Image with a nice curve effect */
+.banner-image-container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d3b66;
+  clip-path: circle(60% at 30% 50%);
+  z-index: 1;
+}
+
+.banner-image {
+  position: relative;
+  width: 80%;
+  z-index: 2;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Right Section: Text content */
+.banner-content {
+  width: 45%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 10px;
+}
+
+.banner-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0d3b66;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.banner-button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.banner-button-primary {
+  background-color: #0d3b66;
+  color: #fff;
+  border: 2px solid #0d3b66;
+}
+
+.banner-button-primary:hover {
+  background-color: transparent;
+  color: #0d3b66;
+}
+
+.banner-button-secondary {
+  background-color: transparent;
+  color: #0d3b66;
+  border: 2px solid #0d3b66;
+}
+
+.banner-button-secondary:hover {
+  background-color: #0d3b66;
+  color: #fff;
+}

@@ -1,81 +1,129 @@
-/* src/components/OurProducts.css */
 .products-container {
-    padding: 20px;
-    position: relative; /* Add this line */
-    width: 1440px;
-    height: 1122px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .product-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 15px;
-  }
-  
-  .product-price {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .product-gift {
-    background-color: #f8c102;
-    padding: 5px 10px;
-    border-radius: 4px;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .product-gift:before {
-    content: "🎁 ";
-  }
-  /* src/components/OurProducts.css */
-  .view-more {
-    position: absolute; /* Position the button absolutely */
-    top: 20px; /* Distance from the top */
-    right: 20px; /* Distance from the right */
-    background-color: white;
-    border: 2px solid #003366; /* Replace #003366 with the actual color code used */
-    color: #003366;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: all 0.3s ease;
-    z-index: 1; /* Ensure the button is above other elements */
-  }
-  
-  .view-more:hover {
-    background-color: #003366;
-    color: white;
-  }
-  
+  position: relative;
+  width: 1440px;
+  height: auto;
+  padding: 40px 80px;
+  background-color: #fff;
+  margin: 0 auto;
+}
 
-  .view-more svg {
-    width: 16px;
-    height: 16px;
-  }
+.frame56-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.products-container h2 {
+  text-align: left; /* Align to the left */
+  margin-bottom: 10px; /* Adjust margin for spacing */
+  font-family: 'SVN-Gilroy', sans-serif; /* Ensure font family is consistent */
+  font-size: 24px; /* Set font size */
+  font-weight: 700; /* Set font weight */
+  line-height: 36px; /* Set line height */
+  color: #003459; /* Set text color for visibility */
+
+}
+.prompt-text {
+  width: 326px;
+  height: 24px;
+  opacity: 1; /* Ensure text is visible */
+  font-family: 'SVN-Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000; /* Set text color for visibility */
+  margin-bottom: 20px; /* Add space below the prompt text */
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures spacing between content and button */
+  height: 100%; /* Ensure the card takes the full height */
+}
+
+.product-image {
+  width: 100%;
+  height: 264px;
+  border-radius: 10px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.detail {
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* Ensure all text inside is left-aligned */
+}
+
+.firsthalf {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-family: 'SVN-Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #00171F;
+  margin-top: 8px;
+}
+
+.product-gift {
+  background-color: #fceed5;
+  color: #ff0000;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-align: left; /* Left-align the gift text */
+  margin-top: 10px;
+}
+
+.product-gift:before {
+  content: "🎁 · "; /* Add the emoji and dot separator */
+}
+
+.view-more {
+  margin-top: auto; /* Push the button to the bottom of the card */
+  background-color: white;
+  border: 2px solid #003366;
+  color: #003366;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: center; /* Center the button horizontally */
+}
+
+.view-more:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.view-more svg {
+  width: 16px;
+  height: 16px;
+}
+
+.produt-size {
+  font-size: 14px;
+  color: #333;
+  text-align: left; /* Ensure the size text is left-aligned */
+}

@@ -1,10 +1,11 @@
 /* Container */
 .frame56-container {
-    width: 1440px;
-    height: 634px;
-    top: 3810px;
+  width: 1440px;
+  height: 634px;
+  top: 3810px;
     padding: 40px 80px;
     background-color: #fff;
+    margin: 0 auto;
   }
   
   /* Header Section */
@@ -17,13 +18,13 @@
   
   .frame56-header h3 {
     font-size: 18px;
-    color: #888;
+    color: #000000;
     font-weight: 400;
   }
   
   .frame56-header h2 {
     font-size: 28px;
-    color: #002244;
+    color: #003459;
     font-weight: 700;
   }
   

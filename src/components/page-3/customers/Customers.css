@@ -1,73 +1,56 @@
-.customer-section {
+/* Customer.css */
+
+.customer-container {
+  width: 80%;
+  margin: 40px auto;
   text-align: center;
-  padding: 40px;
-  background-color: white;
 }
 
-.customer-section h2 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
+.customer-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-.customer-carousel {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  position: relative;
-  max-width: 100%;
-  padding: 20px 0;
-}
-
+/* Customer card styling */
 .customer-card {
-  flex:auto;
-  border-radius: 2px;  /* Add rounded corners */
-  background-color: rgb(94, 28, 28);
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
 }
 
-.customer-card img {
+.customer-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.customer-card-content {
-  padding: 15px;
+.customer-name {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.customer-card-content p {
-  font-size: 14px;
-  color: #666;
-  margin: 5px 0;
-}
-
-.customer-card:hover {
-  transform: scale(1.05);  /* Slight hover effect */
-}
-
-.dot-container {
+/* Loading spinner */
+.loading {
   text-align: center;
-  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: #0d3b66;
 }
 
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
+/* Swiper pagination styling */
+.swiper-pagination-bullet {
+  background-color: #0d3b66;
+  opacity: 0.5;
 }
 
-.active {
-  background-color: #717171;
-}
-
-@media (max-width: 768px) {
-  .customer-card {
-    flex: 0 0 80%;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #0d3b66;
+  opacity: 1;
 }
