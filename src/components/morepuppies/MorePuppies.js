@@ -45,7 +45,7 @@ const MorePuppies = () => {
           <div key={puppy.id} className="puppy-card">
             <img src={puppy.image} alt={puppy.name} className="puppy-image" />
             <div className="puppy-details">
-              <h3>{puppy.id} - {puppy.name}</h3>
+              <h3>{puppy.id} - {puppy.breed}</h3>
               <p><strong>Gender:</strong> {puppy.gender}</p>
               <p><strong>Age:</strong> {puppy.age}</p>
               <p className="puppy-price">{puppy.price} VND</p>

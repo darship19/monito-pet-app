@@ -5,8 +5,10 @@ const Frame56 = () => {
   return (
     <div className="frame56-container">
       <div className="frame56-header">
-        <h3>You already know?</h3>
-        <h2>Useful Pet Knowledge</h2>
+        <div className="header-text">
+          <h3 className="sub-heading">You already know?</h3>
+          <h2 className="main-heading">Useful Pet Knowledge</h2>
+        </div>
         <button className="view-more-btn">View more →</button>
       </div>
 
@@ -20,11 +22,14 @@ const Frame56 = () => {
           />
           <div className="card-body">
             <span className="card-tag">Pet Knowledge</span>
-            <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+            <div className='des'>
+            <div className='hed'> 
+            <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3></div>
             <p>
               The Pomeranian, also known as the Pomeranian (Pom dog), is always
               in the top of the cutest pets...
             </p>
+            </div>
           </div>
         </div>
 
@@ -37,11 +42,16 @@ const Frame56 = () => {
           />
           <div className="card-body">
             <span className="card-tag">Pet Knowledge</span>
+            <div className='des'>
+            <div className='hed'> 
             <h3>Dog Diet You Need To Know</h3>
+            </div>
             <p>
+              
               Dividing a dog’s diet may seem simple at first, but there are some
               rules you should know so...
             </p>
+            </div>
           </div>
         </div>
 
@@ -54,11 +64,13 @@ const Frame56 = () => {
           />
           <div className="card-body">
             <span className="card-tag">Pet Knowledge</span>
-            <h3>Why Dogs Bite and Destroy Furniture and How to Prevent It</h3>
+            <div className='des'>
+              <div className='hed'>            <h3>Why Dogs Bite and Destroy Furniture and How to Prevent It</h3></div>
             <p>
               Dog bites are common during development. However, no one wants
               their furniture or important...
             </p>
+            </div>
           </div>
         </div>
       </div>

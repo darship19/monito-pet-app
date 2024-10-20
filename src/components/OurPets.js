@@ -37,9 +37,9 @@ const OurPets = () => {
       <div className="pets-container">
         {petsData.map((pet) => (
           <div className="pet-card" key={pet.id}>
-            <img src={pet.image} alt={pet.name} />
+            <img src={pet.image} alt={pet.breed} />
             <div className="pet-info">
-              <h3>{pet.id} - {pet.name}</h3>
+              <h3>{pet.id} - {pet.breed}</h3>
               <p>Gender: {pet.gender}</p>
               <p>Age: {pet.age}</p>
               <p>{pet.price}</p>

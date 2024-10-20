@@ -12,6 +12,7 @@ import Category from './components/category/Category'; // Import the new Categor
 import ProductDetails from './components/productDetailsPage/ProductDetails';
 import Contact from './components/contact/Contact';
 import Adoption from './components/adoption/Adoption';
+import './App.css'; // or './App.css' depending on your structure
 
 
 function App() {

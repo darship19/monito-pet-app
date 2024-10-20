@@ -53,8 +53,8 @@ const Frame1 = () => {
         onClick={() => navigate('/product-details', { state: { dog } })} // Navigate on click
       >
         <img src={dog.image} alt={dog.breed} />
-        <h4>{dog.breed}</h4>
-        <p className="info">Price: {dog.price.toLocaleString()} VND</p>
+        <h3>{dog.id} - {dog.breed}</h3>
+        <p className="info">Price: {dog.price.toLocaleString()}</p>
         <p className="info">Age: {dog.age}</p>
         <p className="info">Gender: {dog.gender}</p>
       </div>

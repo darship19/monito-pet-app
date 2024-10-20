@@ -52,9 +52,6 @@ const Customer = () => {
             }}
           >
             <img src={customer.image} alt={customer.name} />
-            <div className="customer-card-content">
-              
-            </div>
           </div>
         ))}
       </div>

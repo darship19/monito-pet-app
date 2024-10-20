@@ -42,7 +42,7 @@ const OurProducts = () => {
             <p>{product.product}</p>
             {product.size && <p>Size: {product.size}</p>}
             <p className="product-price">{product.price}</p>
-            <div className="product-gift">{product.gift}</div>
+            <div className="product-gift">{product.description}</div>
             <button className="view-more" onClick={() => handleViewMore(product)}>
               View more
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
