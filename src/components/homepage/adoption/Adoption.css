@@ -1,67 +1,23 @@
 /* Container */
-.pet-sellers-container {
-    width: 100%;
-    padding: 40px 80px;
-    background-color: #fff;
-    text-align: center;
-  
-  }
-  
-  /* Pet Sellers Header */
-  .pet-sellers-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .pet-sellers-header p {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .pet-sellers-header span {
-    color: #002244;
-    font-weight: 700;
-  }
-  
-  .view-sellers-btn {
-    background: none;
-    border: 2px solid #002244;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #002244;
-    cursor: pointer;
-  }
-  
-  /* Pet Sellers Logos */
-  .pet-sellers-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .pet-sellers-logos img {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  /* Adoption Banner */
-  .adoption-banner {
-    display: flex;
-    align-items: center;
-    background-color: #fef3e0;
-    padding: 30px;
-    border-radius: 20px;
-    height:378px ;
-    width: 1180px;
-    border-radius: 20px;
-    top: 3432px;
-    left: 1310px;
-  }
+.adoption-container {
+  width: 1440px;
+  height: 378px;
+  background-color: #fff;  
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+/* Adoption Banner */
+.adoption-banner {
+  display: flex;
+  align-items: center;
+  background-color: #FFB775;
+  padding: 30px;
+  border-radius: 20px;
+  height: 378px;
+  width: 1180px;
+  border-radius: 20px;
+}
   
   .adoption-text {
     flex: 1;

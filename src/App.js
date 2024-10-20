@@ -1,19 +1,20 @@
 import Navbar  from './navbar/Navbar';
 import React from 'react';
 import "./assets/fonts/SVN-GilroyBold/SVN-GilroyBold.ttf";
-import PetSellers from './components/petSellers/PetSellers';
-import Footer from './components/footer/Footer';
-import Frame56 from './components/frame56/Frame56';
-import OurProducts from './components/ourProducts/OurProducts';
-import Banner from './components/banner/Banner';
-import OurPets from './components/OurPets';
-import Header from './components/header/Header';
+import Footer from './footer/Footer';
+import PetSellers from './components/homepage/petSellers/PetSellers';
+import Frame56 from './components/homepage/frame56/Frame56';
+import OurProducts from './components/homepage/ourProducts/OurProducts';
+import Banner from './components/homepage/banner/Banner';
+import OurPets from './components/homepage/ourpets/OurPets';
+import Header from './components/homepage/header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Category from './components/category/Category'; 
-import ProductDetails from './components/productDetailsPage/ProductDetails';
+import Category from './components/Page-2/category/Category'; 
+import ProductDetails from './components/page-3/productDetailsPage/ProductDetails';
 import Contact from './components/contact/Contact';
-import Adoption from './components/adoption/Adoption';
-import './App.css'; 
+import Adoption from './components/homepage/adoption/Adoption';
+
+import './App.css'; // or './App.css' depending on your structure
 
 
 function App() {

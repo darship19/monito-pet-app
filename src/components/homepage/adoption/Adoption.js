@@ -3,7 +3,7 @@ import './Adoption.css';
 
 const Adoption = () => {
   return (
-    <div className="pet-sellers-container">
+    <div className="adoption-container">
       {/* Pet Sellers Section */}
       {/* Adoption Banner Section */}
       <div className="adoption-banner">

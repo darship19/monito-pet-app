@@ -1,9 +1,12 @@
 .footer-container {
-  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
-  border-radius: 30.22px 30.22px 0px 0px;
+  background: linear-gradient(102.87deg, #FCEED5 100%, #FCEED5 100%, #FFE7BA 100%);
+  border-radius: 40px 40px 0px 0px;
   padding: 60px 98px 30px;
   margin: 0 auto;
-  width: 100%;
+  width: 1440px;
+  height: 440px;
+  top: 4444px;
+  left: -1px;
 }
 
 /* Register Section */
