@@ -7,7 +7,6 @@ const MorePuppies = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch puppies data from API
   useEffect(() => {
     const fetchPuppies = async () => {
       try {
@@ -24,8 +23,6 @@ const MorePuppies = () => {
     fetchPuppies();
   }, []);
 
-
-
   if (loading) {
     return <p>Loading puppies...</p>;
   }
@@ -35,25 +32,28 @@ const MorePuppies = () => {
   }
 
   return (
-    <section className="puppies-section">
-      <div className="puppies-header">
-        <h2>What's new?</h2>
-        <a href="/category" className="see-more-link">See More Puppies</a>
-      </div>
-      <div className="puppies-grid">
-        {puppies.map((puppy) => (
-          <div key={puppy.id} className="puppy-card">
-            <img src={puppy.image} alt={puppy.name} className="puppy-image" />
-            <div className="puppy-details">
-              <h3>{puppy.id} - {puppy.breed}</h3>
-              <p><strong>Gender:</strong> {puppy.gender}</p>
-              <p><strong>Age:</strong> {puppy.age}</p>
-              <p className="puppy-price">{puppy.price} VND</p>
+    <div className="over-all">
+      <section className="puppies-section">
+        <div className="puppies-header">
+          <h2>What's new?</h2>
+          {/* Link remains below */}
+          <a href="/category" className="see-more-link">See More Puppies</a>
+        </div>
+        <div className="puppies-grid">
+          {puppies.map((puppy) => (
+            <div key={puppy.id} className="puppy-card">
+              <img src={puppy.image} alt={puppy.name} className="puppy-image" />
+              <div className="puppy-details">
+                <h3>{puppy.id} - {puppy.breed}</h3>
+                <p><strong>Gender:</strong> {puppy.gender}</p>
+                <p><strong>Age:</strong> {puppy.age}</p>
+                <p className="puppy-price">{puppy.price} VND</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ import './FullDetails.css';
 
 const FullDetails = () => {
   return (
+    <div className="over-all">
     <div className="full-details-container">
       {/* Image Carousel */}
       <div className="carousel">
@@ -90,6 +91,7 @@ const FullDetails = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 };

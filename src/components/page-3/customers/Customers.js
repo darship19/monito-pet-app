@@ -62,7 +62,6 @@ const Customer = () => {
                 alt={customer.name}
                 className="customer-image"
               />
-              <p className="customer-name">{customer.name}</p>
             </div>
           </SwiperSlide>
         ))}

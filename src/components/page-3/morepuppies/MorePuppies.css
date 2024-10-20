@@ -1,26 +1,46 @@
-/* Same as previously shared CSS */
+.over-all {
+  background-color: #fff;
+  width: 1140px;
+  height: 588px;
+  position: relative; /* Ensure positioning of elements */
+}
+
 .puppies-section {
-  padding: 40px;
-  background-color: #f9f9f9;
+  padding: 0; /* Remove padding to move content to the upper left corner */
+  background-color: #FDFDFD;
 }
 
 .puppies-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block; /* Vertical stacking */
+  text-align: left; /* Align both elements to the left */
   margin-bottom: 20px;
+  padding-top: 20px; /* Optional: slight padding from the top */
+  padding-left: 20px; /* Aligns header text to the left with some space */
 }
 
 .puppies-header h2 {
-  font-size: 22px;
-  color: #333;
+  font-family: SVN-Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .see-more-link {
-  font-size: 18px;
-  color: #0056b3;
+  font-family: SVN-Gilroy;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #003459;
+  padding: 0;
   text-decoration: none;
-  font-weight: bold;
+  display: inline-block;
+  width: 199px;
+  height: 36px;
+  opacity: 1;
 }
 
 .see-more-link:hover {
@@ -29,18 +49,22 @@
 
 .puppies-grid {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 20px; /* Adds space between header and puppy cards */
 }
 
 .puppy-card {
-  background-color: white;
-  border-radius: 10px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: calc(25% - 20px);
+  width: calc(25% - 10px);
+  height: 378px;
+  padding: 8px;
+  gap: 8px;
 }
 
 .puppy-card:hover {
