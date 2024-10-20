@@ -1,0 +1,7 @@
+/* src/assets/fonts/SVN-Gilroy.css */
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('./fonts/SVN-Gilroy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
