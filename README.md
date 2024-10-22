@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Monito - Pet Store Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Monito Logo](https://your-image-url.com/logo.png)
 
-## Available Scripts
+Welcome to **Monito**, a modern, user-friendly web application for pet lovers to explore and adopt pets or shop for a variety of pet products. The app is designed with responsiveness in mind, providing a seamless experience across both desktop and mobile platforms.
 
-In the project directory, you can run:
+![Monito Homepage](https://your-image-url.com/homepage.png)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Common Components](#common-components)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Explore Pets**: Browse and filter through a wide range of pets, including details like breed, age, and price.
+- **Product Listings**: Shop for pet food, toys, accessories, and more with prices and offers.
+- **Responsive Design**: Optimized for both laptop and mobile views.
+- **User-Friendly Navigation**: Intuitive layout for easy browsing.
+- **Join the Community**: Subscribe and become part of the Monito pet community.
+- **Filtering & Sorting**: Filter pets and products by different attributes.
+- **Adoption Information**: Learn about adoption processes and find helpful articles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+To run this project locally, you need to have the following installed:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm) (or [yarn](https://yarnpkg.com/getting-started))
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/monito-app.git
+   cd monito-app
