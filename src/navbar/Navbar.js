@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {/* Currency Selector */}
       <div className="currency-selector">
-        <span className="currency-flag">🇻🇳</span>
+        <span className="currency-flag"></span>
         <select>
           <option value="vnd">VND</option>
           <option value="usd">USD</option>

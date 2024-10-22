@@ -1,6 +1,6 @@
 .customer-container {
   width: 1180px;
-  height: 471px;
+  height: auto;
   margin: 40px auto;
   text-align: left;
   position: relative; /* To position elements inside */

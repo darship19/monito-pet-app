@@ -11,7 +11,6 @@
 }
 
 /* Register Section */
-/* Register Section */
 .register-section {
   background-color: #002244;
   padding: 30px;
@@ -29,7 +28,7 @@
   font-weight: 700;
   margin-right: 20px;
   flex: 1;
-  text-align: left; /* Aligns the text to the left */
+  text-align: left;
 }
 
 .email-subscribe-container {
@@ -38,13 +37,13 @@
   border-radius: 5px;
   width: 900px;
   display: flex;
-  justify-content: flex-end; /* Aligns the entire subscribe section to the right */
+  justify-content: flex-end;
 }
 
 .email-subscribe {
   display: flex;
   gap: 10px;
-  justify-content: flex-end; /* Aligns the button to the right within the container */
+  justify-content: flex-end;
 }
 
 .email-subscribe input {
@@ -62,6 +61,12 @@
   font-weight: 700;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-subscribe button:hover {
+  background-color: #FFB775;
+  color: #002244;
 }
 
 /* Align navigation links to the left and social icons to the right */
@@ -103,7 +108,7 @@
   align-items: center;
   border-top: 1px solid #CCD1D2;
   padding-top: 20px;
-  position: relative; /* Added for positioning the logo in the center */
+  position: relative;
 }
 
 .footer-bottom p {
@@ -120,7 +125,7 @@
 }
 
 .logo-center img {
-  width: 100px; /* Adjust size of logo as needed */
+  width: 100px;
   height: auto;
 }
 

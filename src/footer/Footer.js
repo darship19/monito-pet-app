@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 
-
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) {
+      alert('Please enter your email address.');
+      return;
+    }
+    console.log(`Subscribed with email: ${email}`);
+    setEmail(''); // Clear the email field after submission
+  };
+
   return (
     <div className="footer-container">
       {/* Register Section */}
@@ -10,8 +25,14 @@ const Footer = () => {
         <h2>Register Now So You Don't Miss Our Programs</h2>
         <div className="email-subscribe-container">
           <div className="email-subscribe">
-            <input type="email" placeholder="Enter your Email" />
-            <button>Subscribe Now</button>
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
+            <button onClick={handleSubscribe}>Subscribe Now</button>
           </div>
         </div>
       </div>
@@ -40,7 +61,7 @@ const Footer = () => {
 
         {/* Monito Logo in Center */}
         <div className="logo-center">
-        <img src="/images/Frame.png" alt="Monito Logo" />
+          <img src="/images/Frame.png" alt="Monito Logo" />
         </div>
 
         <div className="footer-links">
