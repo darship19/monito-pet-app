@@ -8,17 +8,6 @@ Welcome to **Monito**, a modern, user-friendly web application for pet lovers to
 
 ---
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Common Components](#common-components)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## Features
 
@@ -47,3 +36,17 @@ To run this project locally, you need to have the following installed:
    ```bash
    [git clone https://github.com/your-username/monito-app.git](https://github.com/darship19/monito-pet-app.git)
    cd monito-app
+
+## Tech Stack
+
+- **React.js**: For building the dynamic user interface.
+- **TailwindCSS**: For styling and making the app responsive.
+- **SwiperJS**: For creating smooth carousels and sliders.
+- **GIT**: Version control for managing the codebase.
+
+---
+
+
+## Contact
+
+If you have any questions or want to reach out for further inquiries, please contact us at **premaranjandarshika@gmail.com**.
