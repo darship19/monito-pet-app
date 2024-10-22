@@ -4,7 +4,7 @@
 
 Welcome to **Monito**, a modern, user-friendly web application for pet lovers to explore and adopt pets or shop for a variety of pet products. The app is designed with responsiveness in mind, providing a seamless experience across both desktop and mobile platforms.
 
-![Monito Homepage](images/Screenshot-2024-10-22-175146.png)
+![Monito Homepage](images/Screenshot 2024-10-22 175146.png)
 
 ---
 
