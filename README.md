@@ -1,10 +1,10 @@
 # Monito - Pet Store Web Application
 
-![Monito Logo]([images/Frame.png](https://github.com/darship19/monito-pet-app/blob/main/images/Screenshot%202024-10-22%20175146.png))
+![Monito Logo]([images/Frame.png])
 
 Welcome to **Monito**, a modern, user-friendly web application for pet lovers to explore and adopt pets or shop for a variety of pet products. The app is designed with responsiveness in mind, providing a seamless experience across both desktop and mobile platforms.
 
-![Monito Homepage](https://your-image-url.com/homepage.png)
+![Monito Homepage] (images/Screenshot 2024-10-22 175146.png)
 
 ---
 
