@@ -45,5 +45,5 @@ To run this project locally, you need to have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/monito-app.git
+   [git clone https://github.com/your-username/monito-app.git](https://github.com/darship19/monito-pet-app.git)
    cd monito-app
