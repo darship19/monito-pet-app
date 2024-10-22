@@ -2,23 +2,23 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-
 const Navbar = () => {
   return (
     <div className="navbar">
       {/* Logo */}
       <div className="navbar-logo">
-        <img src="/images/logo.png" alt="Monito Logo" />
+        <Link to="/"> {/* Link wrapper to take users to home */}
+          <img src="/images/logo.png" alt="Monito Logo" />
+        </Link>
       </div>
 
-        {/* Navigation Links */}
-        <div className="navbar-links">
-        <Link to="/">Home</Link> {/* Updated to Link */}
-        <Link to="/category">Category</Link> {/* Updated to Link */}
-        <Link to="/about">About</Link> {/* You can add routes for these later */}
-        <Link to="/contact">Contact</Link> {/* Updated to Link */}
+      {/* Navigation Links */}
+      <div className="navbar-links">
+        <Link to="/">Home</Link>
+        <Link to="/category">Category</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </div>
-
 
       {/* Search Bar */}
       <div className="navbar-search">
